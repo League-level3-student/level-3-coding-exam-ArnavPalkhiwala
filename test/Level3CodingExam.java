@@ -36,7 +36,7 @@ public class Level3CodingExam {
 	public void testATie() {
 		ArrayList<String> votes = new ArrayList<String>();
 		votes.add("pope francis");
-		votes.add("edward Snowden");
+		votes.add("edward snowden");
 
 		assertEquals("TIE", new VoteProcessor().calculateElectionWinner(votes));
 	}

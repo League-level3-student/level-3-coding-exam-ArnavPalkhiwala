@@ -8,7 +8,6 @@ public class VoteProcessor {
 		for (int i = 0; i < votes.size(); i++) {
 			
 			votes.set(i,votes.get(i).toLowerCase());
-			System.out.println(votes.get(i));
 
 		}
 
@@ -19,15 +18,16 @@ public class VoteProcessor {
 
 			if (votes.get(i) == "pope francis") {
 
-				pf += 1;
+				pf = pf + 1;
 			}
 
 			else if (votes.get(i) == "edward snowden") {
 				
-				es += 1;
+				es = es + 1;
 			}
 
 		}
+		
 		
 		if (pf > es) {
 			
